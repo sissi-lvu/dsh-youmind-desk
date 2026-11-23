@@ -1,0 +1,12 @@
+# youmind-desk：YouMind 式创作工作台
+#   素材摄取 → Board → 带引用的检索 / 找亮点 → PPTX + HTML 产物
+# 状态默认写在 $DSH_HOME/state/youmind-desk；演示文稿默认写到会话工作目录。
+# 可选配置：
+#   - id: youmind-desk
+#     config:
+#       deckOutputDir: /path/to/decks   # 覆盖默认输出目录
+#       maxMaterialsPerBoard: 200       # 单板上限，防误灌
+#       defaultStyle: soft              # 默认风格：soft / academic / midnight
+- insert:
+    - id: youmind-desk
+      name: youmind-desk

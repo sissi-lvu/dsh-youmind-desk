@@ -1,0 +1,50 @@
+{
+  "name": "youmind-desk",
+  "version": "0.3.4",
+  "description": "YouMind 式创作工作台：素材摄取 → Board 持久上下文 → 带引用的检索与找亮点 → 可编辑 PPTX/HTML/JSON。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "domain.mjs",
+    "deck.mjs",
+    "slides.mjs",
+    "styles.mjs",
+    "library.mjs",
+    "cordis.patch.yml",
+    "icon.svg",
+    "skills/**/*",
+    "README.md",
+    "INSTALL.md",
+    "vendor/**/*",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "*",
+    "@deepseek-ai/dsh-tools": "*"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "pdf-parse": "^2.4.5"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "youmind",
+    "ppt",
+    "board",
+    "rag"
+  ]
+}
