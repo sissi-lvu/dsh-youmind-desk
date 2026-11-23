@@ -19,15 +19,15 @@ dsh plugin --profile web add github:<你的用户名>/youmind-desk
 指定版本（打完 tag 后）：
 
 ```bash
-dsh plugin --profile web add github:<你的用户名>/youmind-desk#v0.3.4
+dsh plugin --profile web add github:<你的用户名>/youmind-desk#v0.3.5
 ```
 
 ## 方式 B：从 release 附件安装
 
-下载 `youmind-desk-0.3.4.tgz`，然后：
+下载 `youmind-desk-0.3.5.tgz`，然后：
 
 ```bash
-dsh plugin --profile web add /绝对路径/youmind-desk-0.3.4.tgz
+dsh plugin --profile web add /绝对路径/youmind-desk-0.3.5.tgz
 ```
 
 装完**重启一次 dsh**。
@@ -58,7 +58,7 @@ dsh plugin --profile web add /绝对路径/youmind-desk-0.3.4.tgz
 
 **报「PKG_DIR is not defined」**：0.3.1 的回归 bug，0.3.2 起已修，升级即可。
 
-**报「未找到 pptxgenjs」**：装的是 0.3.0 或更早。升级到 0.3.4（vendor 自带），或在插件目录 `npm i pptxgenjs`。
+**报「未找到 pptxgenjs」**：装的是 0.3.0 或更早。升级到 0.3.5（vendor 自带），或在插件目录 `npm i pptxgenjs`。
 
 **素材库页面 404**：插件进程没重启，重启 dsh 再试。
 
